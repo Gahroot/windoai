@@ -1,24 +1,8 @@
-# Robots.txt for PRESTYJ
-# https://prestyj.com
+# Robots.txt for windoAI
+# https://windoai.com
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://prestyj.com/sitemap.xml
-
-# Block AI training crawlers (optional - uncomment if desired)
-# User-agent: GPTBot
-# Disallow: /
-
-# User-agent: ChatGPT-User
-# Disallow: /
-
-# User-agent: CCBot
-# Disallow: /
-
-# User-agent: anthropic-ai
-# Disallow: /
-
-# User-agent: Google-Extended
-# Disallow: /
+Sitemap: https://windoai.com/sitemap.xml

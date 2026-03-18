@@ -1,11 +1,11 @@
 {
-  "name": "PRESTYJ - AI Sales Agents for Service Businesses",
-  "short_name": "PRESTYJ",
-  "description": "AI sales agents that respond to leads in under 60 seconds, qualify them, and book appointments 24/7.",
+  "name": "windoAI - AI Receptionist for Window & Door Companies",
+  "short_name": "windoAI",
+  "description": "AI receptionist that answers calls, qualifies window & door projects, and books in-home estimates 24/7.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0a0a0a",
-  "theme_color": "#0a0a0a",
+  "theme_color": "#0891B2",
   "orientation": "portrait-primary",
   "scope": "/",
   "icons": [

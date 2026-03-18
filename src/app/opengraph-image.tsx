@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { config } from "@/lib/vertical.config";
 
 export const runtime = "edge";
-export const alt = `${config.brandName} - AI Sales Agents for Service Businesses`;
+export const alt = `${config.brandName} - AI Receptionist for Window & Door Companies`;
 export const size = {
   width: 1200,
   height: 630,
@@ -34,7 +34,6 @@ export default async function Image() {
             gap: "24px",
           }}
         >
-          {/* Floating P logo representation */}
           <div
             style={{
               display: "flex",
@@ -42,20 +41,20 @@ export default async function Image() {
               justifyContent: "center",
               width: "140px",
               height: "140px",
-              background: "linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%)",
+              background: "linear-gradient(135deg, #0891B2 0%, #06B6D4 100%)",
               borderRadius: "28px",
-              boxShadow: "0 20px 40px rgba(139, 92, 246, 0.3)",
+              boxShadow: "0 20px 40px rgba(8, 145, 178, 0.3)",
             }}
           >
             <span
               style={{
-                fontSize: "90px",
+                fontSize: "60px",
                 fontWeight: 800,
                 color: "#ffffff",
                 textShadow: "0 2px 10px rgba(0,0,0,0.3)",
               }}
             >
-              P
+              W
             </span>
           </div>
           <div
@@ -86,7 +85,7 @@ export default async function Image() {
                 maxWidth: "800px",
               }}
             >
-              AI Sales Agents
+              AI Receptionist for Window & Door Companies
             </p>
           </div>
           <div
@@ -107,7 +106,7 @@ export default async function Image() {
               }}
             >
               <span>✓</span>
-              <span>60-Second Response</span>
+              <span>Answers Every Call</span>
             </div>
             <div
               style={{
@@ -119,7 +118,7 @@ export default async function Image() {
               }}
             >
               <span>✓</span>
-              <span>24/7 Availability</span>
+              <span>Qualifies Projects</span>
             </div>
             <div
               style={{
@@ -131,7 +130,7 @@ export default async function Image() {
               }}
             >
               <span>✓</span>
-              <span>Auto Booking</span>
+              <span>Books Estimates 24/7</span>
             </div>
           </div>
         </div>

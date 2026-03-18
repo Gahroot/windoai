@@ -33,15 +33,12 @@ export function getAllUrls(): string[] {
     BASE_URL,
     `${BASE_URL}/book-demo`,
     `${BASE_URL}/blog`,
-    `${BASE_URL}/results`,
+    `${BASE_URL}/pricing`,
+    `${BASE_URL}/faq`,
     `${BASE_URL}/alternatives`,
     `${BASE_URL}/best-for`,
     `${BASE_URL}/privacy`,
-    `${BASE_URL}/terms`,
-    `${BASE_URL}/lead-magnet`,
-    `${BASE_URL}/ai-call-handling-calculator`,
-    `${BASE_URL}/team-commission-calculator`,
-    `${BASE_URL}/platform`
+    `${BASE_URL}/terms`
   );
 
   // Blog posts - dynamically from content source
@@ -72,25 +69,6 @@ export function getAllUrls(): string[] {
   for (const slug of filteredBestForSlugs) {
     urls.push(`${BASE_URL}/best-for/${slug}`);
   }
-
-  // Compare pages
-  const compareRoutes = [
-    `/compare/${config.slug}-vs-conversica`,
-    `/compare/${config.slug}-vs-structurely`,
-    `/compare/${config.slug}-vs-drift`,
-    `/compare/${config.slug}-vs-internal-isa-team`,
-    `/compare/${config.slug}-vs-offshore-isa`,
-    `/compare/${config.slug}-vs-answering-service`,
-    "/compare/ai-consultant-vs-diy-ai",
-    // AI consulting comparison pages
-    "/compare/ai-consultant-vs-ai-agency",
-    "/compare/fractional-ai-consultant-vs-full-time-employee",
-    "/compare/ai-implementation-partner-vs-consultant",
-    "/compare/ai-consultant-vs-freelancer",
-    "/compare/ai-consultant-vs-big4-consulting",
-    "/compare/ai-consultant-roi-calculator",
-  ];
-  urls.push(...compareRoutes.map((route) => `${BASE_URL}${route}`));
 
   return urls;
 }

@@ -3,6 +3,7 @@ import { Inter, Manrope } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { Spotlight } from "@/components/effects/spotlight";
+import { AiAgentWidget } from "@/components/embed/ai-agent-widget";
 import { config } from "@/lib/vertical.config";
 
 const inter = Inter({
@@ -131,6 +132,7 @@ fbq('track', 'PageView');`}
         )}
         <Spotlight className="fixed" />
         <div className="relative z-10">{children}</div>
+        <AiAgentWidget />
       </body>
     </html>
   );
