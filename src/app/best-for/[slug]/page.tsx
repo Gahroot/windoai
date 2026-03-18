@@ -20,8 +20,8 @@ import { config } from "@/lib/vertical.config";
 
 const siteUrl = `https://${config.domain}`;
 
-// Pages targeting wrong ICP (solopreneurs instead of enterprise buyers)
-const noindexSlugs = ["solo-agents", "new-agents"];
+// Pages targeting wrong ICP
+const noindexSlugs: string[] = [];
 
 export async function generateMetadata({ params }: BestForPageProps): Promise<Metadata> {
   const { slug } = await params;
@@ -75,7 +75,7 @@ export default async function BestForPage({ params }: BestForPageProps) {
       <FAQJsonLd faqs={bestFor.faq} />
       <Navbar />
       <main className="pt-16">
-        {slug === "roofing" && <LeadMagnetBanner variant="compact" />}
+        {/* Lead magnet banner placeholder for future windows/doors content */}
         <BestForPageClient bestFor={bestFor} />
       </main>
       <Footer />

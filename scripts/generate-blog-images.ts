@@ -20,37 +20,24 @@ const blogPosts: Array<{
   industry: string;
   filename: string;
 }> = [
-  // Missing roofing images
+  // Window & door specific blog images
   {
-    slug: "roofing-speed-to-lead-2026",
-    title: "Speed-to-Lead for Roofing Contractors: Why 5 Seconds Wins $15,000 Jobs",
-    industry: "roofing",
-    filename: "roofing-speed-to-lead-2026.jpg",
-  },
-  {
-    slug: "missed-call-text-back-roofers-2026",
-    title: "Missed Call Text-Back Solutions for Roofers: Recover Every Lost Lead",
-    industry: "roofing",
-    filename: "missed-call-text-back-roofers-2026.jpg",
-  },
-  {
-    slug: "ai-storm-response-roofing-2026",
-    title: "AI Storm Response for Roofing: Handle Surge Demand Without Hiring",
-    industry: "roofing",
-    filename: "ai-storm-response-roofing-2026.jpg",
-  },
-  // Images that likely contain robot/tech imagery - regenerate with brand guidelines
-  {
-    slug: "ai-lead-response-systems-2026",
-    title: "AI Lead Response Systems 2026: The Complete Guide",
+    slug: "speed-to-lead",
+    title: "Speed-to-Lead for Window Companies: Why First Response Wins the $15K Job",
     industry: "general",
-    filename: "ai-lead-response-systems.jpg",
+    filename: "speed-to-lead.jpg",
   },
   {
-    slug: "ai-sales-agents-explained",
-    title: "AI Sales Agents Explained: What They Are and How They Work",
+    slug: "ai-vs-answering-service",
+    title: "AI Receptionist vs Answering Service for Window Companies",
     industry: "general",
-    filename: "ai-sales-agents-explained.jpg",
+    filename: "ai-vs-answering-service.jpg",
+  },
+  {
+    slug: "book-more-estimates",
+    title: "How Window Companies Book More In-Home Estimates with AI",
+    industry: "general",
+    filename: "book-more-estimates.jpg",
   },
 ];
 

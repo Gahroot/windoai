@@ -1,15 +1,15 @@
 export const INDUSTRY_STATS = {
   BUYER_FIRST_RESPONSE: {
     stat: "78%",
-    description: "of buyers work with the first agent to respond",
+    description: "of buyers work with the first company to respond",
   },
   LEADS_GO_COLD: {
     stat: "80%",
     description: "of leads go cold due to slow response times",
   },
-  ISA_COST_MONTHLY: {
+  RECEPTIONIST_COST_MONTHLY: {
     stat: "$4k+/mo",
-    description: "average cost of an ISA plus commission",
+    description: "average cost of a full-time receptionist",
   },
   DEAD_LEAD_REACTIVATION: {
     stat: "23%",
@@ -24,7 +24,7 @@ export const INDUSTRY_STATS = {
 export const STANDARD_INDUSTRY_STATS = [
   INDUSTRY_STATS.BUYER_FIRST_RESPONSE,
   INDUSTRY_STATS.LEADS_GO_COLD,
-  INDUSTRY_STATS.ISA_COST_MONTHLY,
+  INDUSTRY_STATS.RECEPTIONIST_COST_MONTHLY,
 ];
 
 export const REACTIVATION_STATS = [

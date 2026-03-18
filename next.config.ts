@@ -17,18 +17,7 @@ const nextConfig: NextConfig = {
     ],
   },
   async redirects() {
-    return [
-      {
-        source: "/compare/prestyj-vs-ylopo",
-        destination: "/alternatives/ylopo",
-        permanent: true,
-      },
-      {
-        source: "/compare/prestyj-vs-isa",
-        destination: "/alternatives/human-isa",
-        permanent: true,
-      },
-    ];
+    return [];
   },
 };
 

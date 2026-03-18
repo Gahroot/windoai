@@ -66,4 +66,4 @@ See `/src/middleware.ts` for configuration.
 
 ### Reporting Security Issues
 
-If you discover a security vulnerability, please email security@prestyj.com instead of using the issue tracker.
+If you discover a security vulnerability, please email security@windoai.com instead of using the issue tracker.

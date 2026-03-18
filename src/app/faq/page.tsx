@@ -88,7 +88,7 @@ const aiLeadGenerationFaqs: FAQItem[] = [
   {
     question: "Will AI lead generation work for my industry?",
     answer:
-      "Our AI lead generation is particularly effective for home services (HVAC, plumbing, roofing), real estate, legal services, financial services, and any business where quick response times and lead qualification matter. If you have a website and receive inquiries, AI can help you capture more of them.",
+      "Our AI lead generation is particularly effective for window and door companies, including window replacement, door installation, window manufacturers, and dealers. If you have a website and receive inquiries, AI can help you capture more of them.",
   },
   {
     question: "What happens after the AI captures a lead?",
@@ -146,7 +146,7 @@ const aiSalesAgentFaqs: FAQItem[] = [
   {
     question: "My business is too complex for AI to understand.",
     answer:
-      "Our AI is customized to your specific industry, services, and qualification criteria. Whether you're in real estate, home services, or consulting, the AI learns your business inside and out before going live.",
+      "Our AI is customized to your specific services and qualification criteria. Whether you specialize in window replacement, door installation, or full-service manufacturing, the AI learns your business inside and out before going live.",
   },
   {
     question: "What if the AI says something wrong to a potential customer?",
@@ -316,7 +316,7 @@ const pricingImplementationFaqs: FAQItem[] = [
   {
     question: "What industries do you work with?",
     answer:
-      "We specialize in service businesses: roofing, HVAC, plumbing, windows & doors, solar, landscaping, and similar trades. Our AI agents are trained specifically for service industry conversations and objection handling.",
+      "We specialize in window and door companies: window replacement, door installation, window manufacturing, storm windows, patio doors, entry doors, and energy-efficient upgrades. Our AI agents are trained specifically for window and door industry conversations and objection handling.",
   },
   {
     question: "How long does onboarding take?",

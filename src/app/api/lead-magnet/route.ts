@@ -17,7 +17,7 @@ const leadMagnetSchema = z.object({
   name: z.string().min(1, "Name is required"),
   email: z.string().refine((v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v), "Valid email is required"),
   company: z.string().optional(),
-  magnetType: z.literal("roofing-playbook"),
+  magnetType: z.literal("windows-doors-playbook"),
 });
 
 export async function POST(request: NextRequest) {
@@ -55,8 +55,8 @@ export async function POST(request: NextRequest) {
       leadPayload = {
         first_name: data.name.split(" ")[0], // Use first name only
         email: data.email,
-        notes: `Lead Magnet: roofing-playbook${data.company ? `\nCompany: ${data.company}` : ""}`,
-        source: "lead-magnet-roofing-playbook",
+        notes: `Lead Magnet: windows-doors-playbook${data.company ? `\nCompany: ${data.company}` : ""}`,
+        source: "lead-magnet-windows-doors-playbook",
         trigger_call: false,
         trigger_text: false,
       };
@@ -108,7 +108,7 @@ export async function POST(request: NextRequest) {
         : "Lead captured successfully",
       contactId: responseData.contact_id,
       downloadUrl: isLeadMagnet
-        ? "/content/lead-magnet/roofers-24-7-lead-response-playbook.md"
+        ? "/content/lead-magnet/windows-doors-24-7-lead-response-playbook.md"
         : `/ai-calculator-results`,
     });
   } catch (error) {

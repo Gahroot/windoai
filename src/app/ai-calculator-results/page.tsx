@@ -55,15 +55,14 @@ export default function CalculatorResultsPage() {
 
   const getBusinessTypeLabel = (type: string) => {
     const labels: Record<string, string> = {
-      hvac: "HVAC",
-      plumbing: "Plumbing",
-      roofing: "Roofing",
-      electrical: "Electrical",
-      landscaping: "Landscaping",
-      cleaning: "Cleaning Services",
-      "pest-control": "Pest Control",
-      "general-contractor": "General Contractor",
-      other: "Home Services",
+      "window-replacement": "Window Replacement",
+      "door-installation": "Door Installation",
+      "window-manufacturer": "Window Manufacturer",
+      "window-door-dealer": "Window & Door Dealer",
+      "storm-windows": "Storm Windows & Doors",
+      "patio-doors": "Patio & Sliding Doors",
+      "entry-doors": "Entry Doors",
+      other: "Window & Door Services",
     };
     return labels[type] || type;
   };

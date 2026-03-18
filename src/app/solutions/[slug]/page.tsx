@@ -74,7 +74,7 @@ export default async function SolutionPage({ params }: SolutionPageProps) {
       <Navbar />
       <main>
         <LandingHero content={solution.hero} />
-        {slug === "roofing" && <LeadMagnetBanner variant="roofing" />}
+        {/* Lead magnet banner placeholder for future windows/doors content */}
         <LandingPainPoints content={solution.painPoints} />
         {solution.calculator && <ROICalculator content={solution.calculator} />}
         <LandingBenefits content={solution.benefits} />

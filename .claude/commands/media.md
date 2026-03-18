@@ -5,7 +5,7 @@ description: Audit media gaps across the site and generate brand-aligned imagery
 
 # Media Generation System
 
-Audit all visual assets, identify gaps, and generate brand-aligned imagery using the PRESTYJ brand guidelines and Z-Image API.
+Audit all visual assets, identify gaps, and generate brand-aligned imagery using the windoAI brand guidelines and Z-Image API.
 
 **Core Principle**: Audit first. Score gaps. Get approval. Generate only what's approved.
 

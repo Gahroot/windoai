@@ -40,7 +40,7 @@ export default function PrivacyPage() {
               <ul className="list-disc list-inside text-muted-foreground space-y-2">
                 <li><strong className="text-foreground">Contact Information:</strong> Name, phone number, email address</li>
                 <li><strong className="text-foreground">Communication Data:</strong> Content of text messages and conversations with our AI agent</li>
-                <li><strong className="text-foreground">Lead Information:</strong> Property interests, scheduling preferences, and qualification details</li>
+                <li><strong className="text-foreground">Lead Information:</strong> Project interests, scheduling preferences, and qualification details</li>
                 <li><strong className="text-foreground">Technical Data:</strong> Device information, IP address, browser type, and usage patterns</li>
                 <li><strong className="text-foreground">Business Information:</strong> For our clients, CRM integration data and appointment records</li>
               </ul>
@@ -54,7 +54,7 @@ export default function PrivacyPage() {
                 When you provide your phone number and consent to receive text messages from {config.brandName} or our clients:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-4">
-                <li>Your phone number will be used solely for the purpose of sending you relevant communications about real estate inquiries, appointment scheduling, and follow-up information</li>
+                <li>Your phone number will be used solely for the purpose of sending you relevant communications about window and door project inquiries, estimate scheduling, and follow-up information</li>
                 <li>Message frequency varies based on your interactions and inquiries</li>
                 <li>Message and data rates may apply depending on your mobile carrier plan</li>
                 <li>We do not sell, rent, or share your phone number with third parties for their marketing purposes</li>
@@ -76,7 +76,7 @@ export default function PrivacyPage() {
                 We use the information we collect to:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                <li>Facilitate communication between leads and real estate professionals</li>
+                <li>Facilitate communication between leads and window and door companies</li>
                 <li>Qualify leads and schedule appointments on behalf of our clients</li>
                 <li>Provide and improve our AI sales agent services</li>
                 <li>Send relevant follow-up communications via SMS or email</li>
@@ -93,7 +93,7 @@ export default function PrivacyPage() {
                 We may share your information with:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                <li><strong className="text-foreground">Our Clients:</strong> Real estate professionals who use our services to respond to their leads</li>
+                <li><strong className="text-foreground">Our Clients:</strong> Window and door companies who use our services to respond to their leads</li>
                 <li><strong className="text-foreground">Service Providers:</strong> Third-party vendors who assist in providing our services (e.g., SMS delivery, CRM integrations)</li>
                 <li><strong className="text-foreground">Legal Requirements:</strong> When required by law or to protect our rights</li>
               </ul>

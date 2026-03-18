@@ -10,17 +10,17 @@ import { getAlternativesByType } from "@/lib/alternatives";
 import { config } from "@/lib/vertical.config";
 
 export const metadata: Metadata = {
-  title: `Real Estate AI Alternatives | Compare ${config.brandName} to Top Platforms`,
+  title: `Window & Door AI Alternatives | Compare ${config.brandName} to Top Platforms`,
   description:
-    `Compare ${config.brandName} to top real estate AI platforms, CRMs, and ISA services. Find the best alternative for your lead response and reactivation needs.`,
+    `Compare ${config.brandName} to top answering services, CRMs, and lead management tools for window and door companies. Find the best alternative for your lead response needs.`,
   keywords: [
-    "ylopo alternative",
-    "structurely alternative",
-    "CINC alternative",
-    "human ISA alternative",
-    "real estate AI comparison",
-    "follow up boss AI",
-    "real geeks AI",
+    "window company answering service alternative",
+    "MarketSharp alternative",
+    "Improveit 360 alternative",
+    "window company AI receptionist",
+    "window and door lead management",
+    "home services AI comparison",
+    "window installer CRM alternative",
   ],
   alternates: {
     canonical: `https://${config.domain}/alternatives`,
@@ -63,10 +63,10 @@ export default function AlternativesHubPage() {
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mb-10">
               <h2 className="text-2xl sm:text-3xl font-heading font-bold text-foreground mb-3">
-                AI Platforms & ISA Alternatives
+                AI Platforms & Answering Service Alternatives
               </h2>
               <p className="text-muted-foreground">
-                Looking to switch from another AI platform or replace your human ISA? See how
+                Looking to switch from another platform or replace your answering service? See how
                 {config.brandName} compares.
               </p>
             </div>
@@ -143,7 +143,7 @@ export default function AlternativesHubPage() {
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-2xl sm:text-3xl font-heading font-bold text-foreground mb-3">
-                Why Agents Choose {config.brandName}
+                Why Window Companies Choose {config.brandName}
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
                 Whether you&apos;re switching platforms or adding to your stack, here&apos;s what
@@ -174,10 +174,10 @@ export default function AlternativesHubPage() {
 
               <Card>
                 <CardContent className="pt-6 text-center">
-                  <div className="text-4xl font-bold text-primary mb-2">0%</div>
-                  <p className="font-medium text-foreground mb-1">Commission Split</p>
+                  <div className="text-4xl font-bold text-primary mb-2">24/7</div>
+                  <p className="font-medium text-foreground mb-1">Always On</p>
                   <p className="text-sm text-muted-foreground">
-                    Keep 100% of your commission, unlike human ISAs
+                    Never miss another window or door lead, even after hours
                   </p>
                 </CardContent>
               </Card>

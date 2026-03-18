@@ -7,9 +7,9 @@ import { AnimateOnScroll } from "@/components/ui/animate-on-scroll";
 const stats = [
   {
     icon: DollarSign,
-    value: "$10K–$50K",
+    value: "$10K–$30K",
     label: "Average job value",
-    description: "One closed roofing or HVAC job pays for months of service.",
+    description: "One closed window or door job pays for months of service.",
   },
   {
     icon: Users,
@@ -38,9 +38,9 @@ export function PricingROISection() {
               <span className="text-primary">Months of Service</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-6">
-              A single roofing job is worth $10K–$50K. A new HVAC install runs
-              $5K–$15K. A window replacement closes at $8K–$25K. Your AI agent
-              pays for itself with the first booked appointment.
+              A single window replacement job is worth $10K–$30K. A full-home
+              window package can run $25K–$60K. A patio door install closes at
+              $3K–$8K. Your AI agent pays for itself with the first booked estimate.
             </p>
             <p className="text-muted-foreground mb-4">
               The math is simple: the cost of missing one lead is higher than an

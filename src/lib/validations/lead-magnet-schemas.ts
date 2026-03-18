@@ -5,22 +5,22 @@
 import z from "zod";
 
 /**
- * Team Commission Calculator Schema
- * For real estate teams calculating commission losses
+ * Revenue Loss Calculator Schema
+ * For window and door companies calculating revenue losses from slow lead response
  */
 export const teamCalculatorSchema = z.object({
   // Team metrics
   teamSize: z.number()
-    .min(2, "Team size must be at least 2 agents")
-    .max(1000, "Please contact us for enterprise teams (1000+ agents)"),
+    .min(2, "Team size must be at least 2")
+    .max(1000, "Please contact us for enterprise teams (1000+)"),
 
   monthlyLeads: z.number()
     .min(10, "Minimum 10 leads per month")
     .max(100000, "Please enter a realistic lead volume"),
 
   avgCommission: z.number()
-    .min(1000, "Average commission seems low")
-    .max(1000000, "Please enter realistic commission amount"),
+    .min(1000, "Average job value seems low")
+    .max(1000000, "Please enter realistic job value"),
 
   closeRate: z.number()
     .min(0.1, "Close rate must be at least 0.1%")
@@ -39,7 +39,7 @@ export const teamCalculatorSchema = z.object({
   name: z.string().min(2, "Name is required"),
   email: z.string().refine((v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v), "Valid email required"),
   companyName: z.string().optional(),
-  role: z.enum(["team-lead", "broker", "isa-manager", "other"]),
+  role: z.enum(["owner", "sales-manager", "office-manager", "other"]),
 });
 
 export type TeamCalculatorInput = z.infer<typeof teamCalculatorSchema>;
@@ -60,8 +60,8 @@ export const responseTimeOptions = [
  * Role options for dropdown
  */
 export const roleOptions = [
-  { value: "team-lead", label: "Team Lead" },
-  { value: "broker", label: "Broker/Owner" },
-  { value: "isa-manager", label: "ISA Manager" },
+  { value: "owner", label: "Owner" },
+  { value: "sales-manager", label: "Sales Manager" },
+  { value: "office-manager", label: "Office Manager" },
   { value: "other", label: "Other" },
 ] as const;

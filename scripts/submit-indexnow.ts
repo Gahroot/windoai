@@ -17,7 +17,7 @@ import { getAllSolutionSlugs } from "../src/lib/solutions";
 import { getAllBestForSlugs } from "../src/lib/best-for";
 
 const INDEXNOW_ENDPOINT = "https://yandex.com/indexnow";
-const BASE_URL = "https://prestyj.com";
+const BASE_URL = "https://windoai.com";
 
 interface IndexNowSubmission {
   host: string;
@@ -80,25 +80,8 @@ function getAllUrls(): string[] {
     }
   }
 
-  // Compare pages
-  const compareRoutes = [
-    "/compare/prestyj-vs-conversica",
-    "/compare/prestyj-vs-structurely",
-    "/compare/prestyj-vs-drift",
-    "/compare/prestyj-vs-internal-isa-team",
-    "/compare/prestyj-vs-offshore-isa",
-    "/compare/prestyj-vs-answering-service",
-    "/compare/ai-consultant-vs-diy-ai",
-    // AI consulting comparison pages
-    "/compare/ai-consultant-vs-ai-agency",
-    "/compare/fractional-ai-consultant-vs-full-time-employee",
-    "/compare/ai-implementation-partner-vs-consultant",
-    "/compare/ai-consultant-vs-freelancer",
-    "/compare/ai-consultant-vs-big4-consulting",
-    "/compare/ai-consultant-roi-calculator",
-    // AI vs Traditional comparison
-    "/compare/ai-lead-generation-vs-traditional",
-  ];
+  // Compare pages (add window & door specific comparisons as they are created)
+  const compareRoutes: string[] = [];
   urls.push(...compareRoutes.map((route) => `${BASE_URL}${route}`));
 
   return urls;
@@ -106,7 +89,7 @@ function getAllUrls(): string[] {
 
 async function submitUrls(urls: string[], key: string): Promise<void> {
   const payload: IndexNowSubmission = {
-    host: "prestyj.com",
+    host: "windoai.com",
     key,
     keyLocation: `${BASE_URL}/${key}.txt`,
     urlList: urls,
@@ -162,7 +145,7 @@ async function main() {
       "  INDEXNOW_API_KEY=your-key npx tsx scripts/submit-indexnow.ts"
     );
     console.error(
-      "  INDEXNOW_API_KEY=your-key npx tsx scripts/submit-indexnow.ts --url https://prestyj.com/blog/example"
+      "  INDEXNOW_API_KEY=your-key npx tsx scripts/submit-indexnow.ts --url https://windoai.com/blog/example"
     );
     console.error("  npx tsx scripts/submit-indexnow.ts --dry-run");
     process.exit(1);

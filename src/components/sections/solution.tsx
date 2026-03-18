@@ -41,7 +41,7 @@ export function SolutionSection() {
             <div className="space-y-4">
               <div className="flex items-center gap-3 text-muted-foreground">
                 <div className="w-2 h-2 rounded-full bg-success" />
-                <span>Replaces your receptionist, ISA, and follow-up process</span>
+                <span>Replaces your receptionist, answering service, and follow-up process</span>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <div className="w-2 h-2 rounded-full bg-success" />

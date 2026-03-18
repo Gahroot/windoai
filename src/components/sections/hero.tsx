@@ -20,7 +20,7 @@ export function HeroSection() {
             transition={{ duration: 0.5 }}
           >
             <Badge variant="outline" className="mb-6 border-primary/50 text-primary">
-              AI Sales Agents for Real Estate
+              AI Receptionist for Window & Door Companies
             </Badge>
           </motion.div>
 
@@ -41,8 +41,8 @@ export function HeroSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8"
           >
-            Your AI agent responds to every lead in under 60 seconds, qualifies them, and books
-            appointments on your calendar. 24/7. No salary. No commission splits.
+            Your AI receptionist responds to every lead in under 60 seconds, qualifies their project, and books
+            in-home estimates on your calendar. 24/7. No salary. No missed calls.
           </motion.p>
 
           <motion.div

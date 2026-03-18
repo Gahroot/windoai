@@ -206,17 +206,14 @@ export function RoiCalculator() {
                   <SelectValue placeholder="Select your industry" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="hvac">HVAC</SelectItem>
-                  <SelectItem value="plumbing">Plumbing</SelectItem>
-                  <SelectItem value="roofing">Roofing</SelectItem>
-                  <SelectItem value="electrical">Electrical</SelectItem>
-                  <SelectItem value="landscaping">Landscaping</SelectItem>
-                  <SelectItem value="cleaning">Cleaning Services</SelectItem>
-                  <SelectItem value="pest-control">Pest Control</SelectItem>
-                  <SelectItem value="general-contractor">
-                    General Contractor
-                  </SelectItem>
-                  <SelectItem value="other">Other Home Services</SelectItem>
+                  <SelectItem value="window-replacement">Window Replacement</SelectItem>
+                  <SelectItem value="door-installation">Door Installation</SelectItem>
+                  <SelectItem value="window-manufacturer">Window Manufacturer</SelectItem>
+                  <SelectItem value="window-door-dealer">Window & Door Dealer</SelectItem>
+                  <SelectItem value="storm-windows">Storm Windows & Doors</SelectItem>
+                  <SelectItem value="patio-doors">Patio & Sliding Doors</SelectItem>
+                  <SelectItem value="entry-doors">Entry Doors</SelectItem>
+                  <SelectItem value="other">Other Window & Door Services</SelectItem>
                 </SelectContent>
               </Select>
             </div>

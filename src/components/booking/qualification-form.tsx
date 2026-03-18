@@ -76,12 +76,12 @@ const STEPS: Step[] = [
 ];
 
 const BUSINESS_TYPES = [
-  { value: "agency", label: "Agency / Consultancy", icon: <Users className="w-5 h-5" /> },
-  { value: "saas", label: "SaaS / Tech Company", icon: <Rocket className="w-5 h-5" /> },
-  { value: "ecommerce", label: "E-commerce / Retail", icon: <Building2 className="w-5 h-5" /> },
-  { value: "real-estate", label: "Real Estate", icon: <Building2 className="w-5 h-5" /> },
-  { value: "services", label: "Professional Services", icon: <Briefcase className="w-5 h-5" /> },
-  { value: "other", label: "Other", icon: <Zap className="w-5 h-5" /> },
+  { value: "window-replacement", label: "Window Replacement", icon: <Building2 className="w-5 h-5" /> },
+  { value: "door-installation", label: "Door Installation", icon: <Building2 className="w-5 h-5" /> },
+  { value: "window-manufacturer", label: "Window Manufacturer", icon: <Rocket className="w-5 h-5" /> },
+  { value: "window-dealer", label: "Window & Door Dealer", icon: <Users className="w-5 h-5" /> },
+  { value: "multi-location", label: "Multi-Location Franchise", icon: <Briefcase className="w-5 h-5" /> },
+  { value: "other", label: "Other Window & Door", icon: <Zap className="w-5 h-5" /> },
 ];
 
 const REVENUE_OPTIONS = [

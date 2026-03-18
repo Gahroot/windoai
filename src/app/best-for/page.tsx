@@ -10,16 +10,16 @@ import { getAllBestForPages } from "@/lib/best-for";
 import { config } from "@/lib/vertical.config";
 
 export const metadata: Metadata = {
-  title: `Best AI Sales Agent for Your Niche | ${config.brandName}`,
+  title: `Best AI Sales Agent for Window & Door Companies | ${config.brandName}`,
   description:
-    `Discover why ${config.brandName} is the best AI sales agent for your specific real estate niche. Find tailored solutions for solo agents, teams, luxury markets, and more.`,
+    `Discover why ${config.brandName} is the best AI receptionist for window and door companies. Find tailored solutions for window replacement, door installation, manufacturers, and more.`,
   keywords: [
-    "best AI for real estate agents",
-    "AI sales agent for realtors",
-    "real estate AI by niche",
-    "AI for solo agents",
-    "AI for real estate teams",
-    "luxury real estate AI",
+    "best AI for window companies",
+    "AI receptionist for window installers",
+    "window and door AI by niche",
+    "AI for window manufacturers",
+    "AI for door installation companies",
+    "window replacement lead management",
   ],
   alternates: {
     canonical: `https://${config.domain}/best-for`,
@@ -49,9 +49,9 @@ export default function BestForHubPage() {
               </h1>
 
               <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-                Every real estate professional has unique needs. Explore how {config.brandName} adapts to your
-                specific niche, whether you&apos;re a solo agent, leading a team, or specializing in
-                luxury properties.
+                Every window and door company has unique needs. Explore how {config.brandName} adapts to your
+                specific niche, whether you&apos;re a window installer, manufacturer, or multi-location
+                dealer.
               </p>
             </div>
           </div>
@@ -109,11 +109,11 @@ export default function BestForHubPage() {
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-2xl sm:text-3xl font-heading font-bold text-foreground mb-3">
-                Why Agents Choose {config.brandName}
+                Why Window Companies Choose {config.brandName}
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Regardless of your niche, {config.brandName} delivers consistent results that help you close
-                more deals.
+                Regardless of your niche, {config.brandName} delivers consistent results that help you book
+                more estimates.
               </p>
             </div>
 
@@ -140,10 +140,10 @@ export default function BestForHubPage() {
 
               <Card>
                 <CardContent className="pt-6 text-center">
-                  <div className="text-4xl font-bold text-primary mb-2">0%</div>
-                  <p className="font-medium text-foreground mb-1">Commission Split</p>
+                  <div className="text-4xl font-bold text-primary mb-2">24/7</div>
+                  <p className="font-medium text-foreground mb-1">Always On</p>
                   <p className="text-sm text-muted-foreground">
-                    Keep 100% of your commission, unlike human ISAs
+                    Never miss another window or door lead, even after hours
                   </p>
                 </CardContent>
               </Card>

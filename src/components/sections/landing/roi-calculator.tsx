@@ -149,7 +149,7 @@ export function ROICalculator({ content }: ROICalculatorProps) {
                     id={`${commissionId}-hint`}
                     className="text-xs text-muted-foreground"
                   >
-                    Your typical commission from a closed deal
+                    Your typical revenue from a closed job
                   </p>
                 </div>
               </div>

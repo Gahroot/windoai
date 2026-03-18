@@ -65,8 +65,8 @@ const howItWorksImages: ImageConfig[] = [
   {
     prompt: buildPrompt({
       category: "industry-shot",
-      subject: "Business owner responding to lead on phone immediately, focused expression, professional setting",
-      industry: "roofing",
+      subject: "Window company owner responding to lead on phone immediately, focused expression, professional setting",
+      industry: "general",
       mood: "dynamic",
     }),
     filename: "industry-shot-speed-to-lead.png",
@@ -95,8 +95,8 @@ const howItWorksImages: ImageConfig[] = [
   {
     prompt: buildPrompt({
       category: "industry-shot",
-      subject: "Business professional following up with previous missed lead, phone conversation, determined expression",
-      industry: "mortgage",
+      subject: "Window company sales rep following up with homeowner lead, phone conversation, determined expression",
+      industry: "general",
       mood: "focused",
     }),
     filename: "industry-shot-lead-recovery.png",
@@ -112,8 +112,8 @@ const solutionHeroImages: ImageConfig[] = [
   {
     prompt: buildPrompt({
       category: "hero",
-      subject: "Real estate agent responding quickly to client inquiry, professional urgency, mobile device in hand",
-      industry: "real-estate",
+      subject: "Window company owner responding quickly to homeowner inquiry, professional urgency, mobile device in hand",
+      industry: "general",
       mood: "dynamic",
     }),
     filename: "hero-speed-to-lead.png",
@@ -132,11 +132,11 @@ const solutionHeroImages: ImageConfig[] = [
   {
     prompt: buildPrompt({
       category: "hero",
-      subject: "Roofer on residential jobsite, answering phone while on ladder or near roof, stormy sky context",
-      industry: "roofing",
+      subject: "Window installer at residential jobsite, answering phone near window frames, suburban home exterior",
+      industry: "general",
       mood: "dynamic",
     }),
-    filename: "hero-roofing.png",
+    filename: "hero-windows-doors.png",
     aspectRatio: "16:9",
   },
 ];
@@ -149,8 +149,8 @@ const testimonialImages: ImageConfig[] = [
   {
     prompt: buildPrompt({
       category: "testimonial-portrait",
-      subject: "Professional headshot of Marcus Chen, roofing contractor, outdoors near jobsite",
-      industry: "roofing",
+      subject: "Professional headshot of Marcus Chen, window installation company owner, outdoors near jobsite",
+      industry: "general",
       mood: "warm",
     }),
     filename: "testimonial-marcus-chen.png",
@@ -159,8 +159,8 @@ const testimonialImages: ImageConfig[] = [
   {
     prompt: buildPrompt({
       category: "testimonial-portrait",
-      subject: "Professional headshot of Sarah Martinez, real estate agent, modern office background",
-      industry: "real-estate",
+      subject: "Professional headshot of Sarah Martinez, window company sales manager, modern office background",
+      industry: "general",
       mood: "warm",
     }),
     filename: "testimonial-sarah-martinez.png",
@@ -169,8 +169,8 @@ const testimonialImages: ImageConfig[] = [
   {
     prompt: buildPrompt({
       category: "testimonial-portrait",
-      subject: "Professional headshot of Dr. James Wilson, dentist, clinical setting",
-      industry: "dental",
+      subject: "Professional headshot of James Wilson, window manufacturer rep, showroom setting",
+      industry: "general",
       mood: "warm",
     }),
     filename: "testimonial-james-wilson.png",
@@ -179,8 +179,8 @@ const testimonialImages: ImageConfig[] = [
   {
     prompt: buildPrompt({
       category: "testimonial-portrait",
-      subject: "Professional headshot of Jennifer Park, loan officer, bank office setting",
-      industry: "mortgage",
+      subject: "Professional headshot of Jennifer Park, window company office manager, office setting",
+      industry: "general",
       mood: "warm",
     }),
     filename: "testimonial-jennifer-park.png",
@@ -189,8 +189,8 @@ const testimonialImages: ImageConfig[] = [
   {
     prompt: buildPrompt({
       category: "testimonial-portrait",
-      subject: "Professional headshot of Mike Thompson, HVAC business owner, near service vehicle",
-      industry: "hvac",
+      subject: "Professional headshot of Mike Thompson, door installation company owner, near service vehicle",
+      industry: "general",
       mood: "warm",
     }),
     filename: "testimonial-mike-thompson.png",

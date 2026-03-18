@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   description:
     "Transparent pricing for AI-powered marketing automation. Three plans built for service businesses — ad management, AI lead response, and done-for-you setup included.",
   keywords: [
-    "AI marketing pricing",
-    "service business marketing automation",
+    "AI receptionist pricing",
+    "window company marketing automation",
     "AI lead response pricing",
-    "roofing marketing pricing",
-    "HVAC marketing automation cost",
+    "window replacement marketing pricing",
+    "window company AI cost",
     "AI sales agent pricing",
     `${config.brandName} pricing`,
   ],

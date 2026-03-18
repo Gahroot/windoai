@@ -45,7 +45,7 @@ const BATCH_DELAY_MS = 2000;
 //
 // Categories:
 // - ISA-related (human-isa, internal-isa, isa-service, offshore-isa)
-// - Real estate platforms (ylopo, cinc, kvcore, boomtown, real-geeks, sierra-interactive, follow-up-boss, homebot, betterbot, lofty)
+// - Window company platforms (ylopo, cinc, kvcore, boomtown, real-geeks, sierra-interactive, follow-up-boss, homebot, betterbot, lofty)
 // - Enterprise AI (drift, conversica, structurely)
 // - Voice AI platforms (retell, vapi, bland-ai, bland-ai-alt, air-dot-ai, synthflow, eliseai, smart-alto, goodcall, poly-ai, cloudtalk, dialpad, ringcentral, voiceflow)
 // - Receptionist/answering (ruby-receptionist, smith-ai, answer-connect, my-ai-front-desk)
@@ -87,7 +87,7 @@ const alternativeHeroImages: ImageConfig[] = [
   {
     prompt: buildPrompt({
       category: "hero",
-      subject: "Offshore call center with cultural disconnect, representative struggling with US real estate terminology, confusing communication",
+      subject: "Offshore call center with cultural disconnect, representative struggling with US window and door terminology, confusing communication",
       industry: "general",
       mood: "candid",
     }),
@@ -95,11 +95,11 @@ const alternativeHeroImages: ImageConfig[] = [
     aspectRatio: "16:9",
   },
 
-  // Real estate platform alternatives (focus on complexity, expensive)
+  // Window company platform alternatives (focus on complexity, expensive)
   {
     prompt: buildPrompt({
       category: "hero",
-      subject: "Real estate agent confused by complex dashboard, multiple screens, expensive software subscription visible, frustration",
+      subject: "Window company agent confused by complex dashboard, multiple screens, expensive software subscription visible, frustration",
       industry: "real-estate",
       mood: "candid",
     }),
@@ -109,7 +109,7 @@ const alternativeHeroImages: ImageConfig[] = [
   {
     prompt: buildPrompt({
       category: "hero",
-      subject: "Real estate team manager with tablet showing expensive enterprise software, complex setup, training manuals visible, overwhelmed",
+      subject: "Window company team manager with tablet showing expensive enterprise software, complex setup, training manuals visible, overwhelmed",
       industry: "real-estate",
       mood: "candid",
     }),
@@ -119,7 +119,7 @@ const alternativeHeroImages: ImageConfig[] = [
   {
     prompt: buildPrompt({
       category: "hero",
-      subject: "Real estate broker reviewing expensive lead gen software bill, looking concerned, complex interface, office setting",
+      subject: "Window company broker reviewing expensive lead gen software bill, looking concerned, complex interface, office setting",
       industry: "real-estate",
       mood: "candid",
     }),
@@ -129,7 +129,7 @@ const alternativeHeroImages: ImageConfig[] = [
   {
     prompt: buildPrompt({
       category: "hero",
-      subject: "Real estate team at large brokerage, expensive platform licenses on screen, enterprise complexity, onboarding overwhelm",
+      subject: "Window company team at large brokerage, expensive platform licenses on screen, enterprise complexity, onboarding overwhelm",
       industry: "real-estate",
       mood: "candid",
     }),
@@ -149,7 +149,7 @@ const alternativeHeroImages: ImageConfig[] = [
   {
     prompt: buildPrompt({
       category: "hero",
-      subject: "Real estate team looking at Sierra Interactive dashboard, complex reporting features, expensive enterprise tier, training session",
+      subject: "Window company team looking at Sierra Interactive dashboard, complex reporting features, expensive enterprise tier, training session",
       industry: "real-estate",
       mood: "candid",
     }),
@@ -169,7 +169,7 @@ const alternativeHeroImages: ImageConfig[] = [
   {
     prompt: buildPrompt({
       category: "hero",
-      subject: "Real estate agent using Homebot dashboard, expensive monthly subscription visible, limited automation, manual work",
+      subject: "Window company agent using Homebot dashboard, expensive monthly subscription visible, limited automation, manual work",
       industry: "real-estate",
       mood: "candid",
     }),
@@ -189,7 +189,7 @@ const alternativeHeroImages: ImageConfig[] = [
   {
     prompt: buildPrompt({
       category: "hero",
-      subject: "Real estate professional using Lofty platform, generic AI chatbot interface, expensive monthly cost, limited customization",
+      subject: "Window company professional using Lofty platform, generic AI chatbot interface, expensive monthly cost, limited customization",
       industry: "real-estate",
       mood: "candid",
     }),
@@ -197,7 +197,7 @@ const alternativeHeroImages: ImageConfig[] = [
     aspectRatio: "16:9",
   },
 
-  // Enterprise AI alternatives (focus on 12-week implementation, expensive, not real estate)
+  // Enterprise AI alternatives (focus on 12-week implementation, expensive, not window and door)
   {
     prompt: buildPrompt({
       category: "hero",
@@ -211,7 +211,7 @@ const alternativeHeroImages: ImageConfig[] = [
   {
     prompt: buildPrompt({
       category: "hero",
-      subject: "VP of sales reviewing Conversica contract, expensive minimums, long implementation, generic not real estate specific",
+      subject: "VP of sales reviewing Conversica contract, expensive minimums, long implementation, generic not window and door specific",
       industry: "general",
       mood: "candid",
     }),
@@ -221,7 +221,7 @@ const alternativeHeroImages: ImageConfig[] = [
   {
     prompt: buildPrompt({
       category: "hero",
-      subject: "Real estate franchise operator outgrowing Structurely, hitting seat limits and lead caps, need for enterprise scale",
+      subject: "Window company franchise operator outgrowing Structurely, hitting seat limits and lead caps, need for enterprise scale",
       industry: "real-estate",
       mood: "focused",
     }),
@@ -293,7 +293,7 @@ const alternativeHeroImages: ImageConfig[] = [
   {
     prompt: buildPrompt({
       category: "hero",
-      subject: "Real estate team using EliseAI AI assistant, expensive enterprise pricing, complex setup, not simple implementation",
+      subject: "Window company team using EliseAI AI assistant, expensive enterprise pricing, complex setup, not simple implementation",
       industry: "real-estate",
       mood: "candid",
     }),
@@ -417,7 +417,7 @@ const alternativeHeroImages: ImageConfig[] = [
   {
     prompt: buildPrompt({
       category: "hero",
-      subject: "Professional using Lindy AI assistant, generic productivity AI, not specialized for real estate lead response",
+      subject: "Professional using Lindy AI assistant, generic productivity AI, not specialized for window and door lead response",
       industry: "general",
       mood: "candid",
     }),
@@ -438,27 +438,27 @@ const compareHeroImages: ImageConfig[] = [
       industry: "real-estate",
       mood: "dynamic",
     }),
-    filename: "hero-compare-prestyj-vs-isa.png",
+    filename: "hero-compare-windoai-vs-isa.png",
     aspectRatio: "16:9",
   },
   {
     prompt: buildPrompt({
       category: "hero",
-      subject: "Enterprise real estate office comparison: complex Drift implementation timeline vs Prestyj quick deployment",
+      subject: "Enterprise window and door office comparison: complex Drift implementation timeline vs windoAI quick deployment",
       industry: "real-estate",
       mood: "dynamic",
     }),
-    filename: "hero-compare-prestyj-vs-drift.png",
+    filename: "hero-compare-windoai-vs-drift.png",
     aspectRatio: "16:9",
   },
   {
     prompt: buildPrompt({
       category: "hero",
-      subject: "Conversica enterprise AI vs Prestyj real estate-specific solution, comparison of implementation and focus",
+      subject: "Conversica enterprise AI vs windoAI window and door-specific solution, comparison of implementation and focus",
       industry: "real-estate",
       mood: "dynamic",
     }),
-    filename: "hero-compare-prestyj-vs-conversica.png",
+    filename: "hero-compare-windoai-vs-conversica.png",
     aspectRatio: "16:9",
   },
   {
@@ -468,7 +468,7 @@ const compareHeroImages: ImageConfig[] = [
       industry: "real-estate",
       mood: "focused",
     }),
-    filename: "hero-compare-prestyj-vs-internal-isa-team.png",
+    filename: "hero-compare-windoai-vs-internal-isa-team.png",
     aspectRatio: "16:9",
   },
   {
@@ -478,27 +478,27 @@ const compareHeroImages: ImageConfig[] = [
       industry: "real-estate",
       mood: "focused",
     }),
-    filename: "hero-compare-prestyj-vs-offshore-isa.png",
+    filename: "hero-compare-windoai-vs-offshore-isa.png",
     aspectRatio: "16:9",
   },
   {
     prompt: buildPrompt({
       category: "hero",
-      subject: "Ylopo vs Prestyj comparison: ad spend requirements and platform focus, real estate agents evaluating options",
+      subject: "Ylopo vs windoAI comparison: ad spend requirements and platform focus, window and door agents evaluating options",
       industry: "real-estate",
       mood: "dynamic",
     }),
-    filename: "hero-compare-prestyj-vs-ylopo.png",
+    filename: "hero-compare-windoai-vs-ylopo.png",
     aspectRatio: "16:9",
   },
   {
     prompt: buildPrompt({
       category: "hero",
-      subject: "Structurely small team platform vs Prestyj enterprise scale, franchise operations comparison",
+      subject: "Structurely small team platform vs windoAI enterprise scale, franchise operations comparison",
       industry: "real-estate",
       mood: "dynamic",
     }),
-    filename: "hero-compare-prestyj-vs-structurely.png",
+    filename: "hero-compare-windoai-vs-structurely.png",
     aspectRatio: "16:9",
   },
 ];

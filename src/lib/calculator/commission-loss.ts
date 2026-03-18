@@ -1,6 +1,6 @@
 /**
- * Team Commission Loss Calculator
- * Calculates commission losses due to slow lead response times for real estate teams
+ * Revenue Loss Calculator
+ * Calculates revenue losses due to slow lead response times for window and door companies
  */
 
 import type { TeamCalculatorInput } from "@/lib/validations/lead-magnet-schemas";
