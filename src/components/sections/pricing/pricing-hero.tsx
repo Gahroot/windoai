@@ -8,12 +8,13 @@ export function PricingHero() {
           Transparent Pricing
         </Badge>
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-6">
-          Dominate Your Market with{" "}
-          <span className="text-primary">AI-Powered Leads</span>
+          Your AI Sales Team,{" "}
+          <span className="text-primary">Starting at $497/mo</span>
         </h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          Pick your automation level. Every plan includes done-for-you ad
-          management, AI lead response, and a dedicated onboarding team.
+          Pick your automation level. Every plan includes an AI receptionist
+          trained on window &amp; door industry conversations. No contracts. No
+          setup fees.
         </p>
       </div>
     </section>

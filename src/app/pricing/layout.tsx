@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import { config } from "@/lib/vertical.config";
 
 export const metadata: Metadata = {
-  title: `Pricing | ${config.brandName} AI Marketing Automation`,
+  title: `Pricing | ${config.brandName} AI Receptionist`,
   description:
-    "Transparent pricing for AI-powered marketing automation. Three plans built for service businesses — ad management, AI lead response, and done-for-you setup included.",
+    "Transparent pricing for AI-powered receptionist and lead management. Three plans built for window and door companies — AI receptionist, lead qualification, and appointment booking included.",
   keywords: [
     "AI receptionist pricing",
-    "window company marketing automation",
+    "window company AI automation",
     "AI lead response pricing",
     "window replacement marketing pricing",
     "window company AI cost",
@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     `${config.brandName} pricing`,
   ],
   openGraph: {
-    title: `Pricing | ${config.brandName} AI Marketing Automation`,
+    title: `Pricing | ${config.brandName} AI Receptionist`,
     description:
-      "Transparent pricing for AI-powered marketing automation. Ad management, AI agents, and done-for-you setup included in every plan.",
+      "Transparent pricing for AI-powered receptionist and lead management. AI agents, appointment booking, and lead qualification included in every plan.",
     type: "website",
     url: `https://${config.domain}/pricing`,
   },

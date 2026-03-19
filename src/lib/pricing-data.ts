@@ -1,22 +1,20 @@
 import type { LucideIcon } from "lucide-react";
 import {
-  Megaphone,
-  DollarSign,
-  LayoutGrid,
-  FileText,
-  Globe,
-  Database,
-  Bot,
-  Phone,
   PhoneIncoming,
-  RotateCcw,
-  Calendar,
-  MessageSquare,
   Bell,
-  ClipboardList,
+  Bot,
+  MessageSquare,
+  RotateCcw,
+  Phone,
+  Database,
+  Calendar,
+  BarChart3,
+  Building2,
+  Users,
+  Shield,
 } from "lucide-react";
 
-export type TierId = "minimum" | "pro" | "max";
+export type TierId = "starter" | "growth" | "enterprise";
 
 export interface PricingTier {
   id: TierId;
@@ -24,8 +22,6 @@ export interface PricingTier {
   tagline: string;
   setupFee: number;
   monthlyPrice: number;
-  adBudget: string;
-  batchAds: string;
   highlights: string[];
   features: Record<string, boolean>;
   story: string;
@@ -36,7 +32,7 @@ export interface PricingFeature {
   key: string;
   label: string;
   icon: LucideIcon;
-  category: "marketing" | "ai" | "platform";
+  category: "ai" | "integrations" | "support";
 }
 
 export interface PricingFAQ {
@@ -45,178 +41,161 @@ export interface PricingFAQ {
 }
 
 export const featureCategories = {
-  marketing: "Marketing & Ads",
   ai: "AI Agents",
-  platform: "Platform",
+  integrations: "Integrations",
+  support: "Support & Onboarding",
 } as const;
 
 export const pricingTiers: PricingTier[] = [
   {
-    id: "minimum",
-    name: "Minimum",
-    tagline: "Done-for-you ads and lead generation",
-    setupFee: 3997,
-    monthlyPrice: 1997,
-    adBudget: "$1,000/mo included",
-    batchAds: "300/mo",
+    id: "starter",
+    name: "Starter",
+    tagline: "AI receptionist that never misses a lead",
+    setupFee: 0,
+    monthlyPrice: 497,
     highlights: [
-      "$1,000/mo ad budget included",
-      "300 batch video ads/mo",
-      "AI appointment agent + calendar",
-      "Landing page + CRM Sync",
+      "AI receptionist answers every call",
+      "Automated appointment booking",
+      "Calendar integration",
+      "Analytics dashboard",
     ],
     features: {
-      AD_MANAGEMENT: true,
-      AD_BUDGET: true,
-      BATCH_ADS: true,
-      LANDING_PAGE: true,
-      QUALIFICATION_FORM: false,
-      FULL_WEBSITE: false,
-      CRM_SYNC: true,
-      CALENDAR_INTEGRATION: true,
-      AI_APPOINTMENT_AGENT: true,
+      AI_RECEPTIONIST: true,
+      AI_APPOINTMENT_SETTER: true,
       AI_CHATBOT: false,
       AI_TEXTING: false,
       LEAD_REACTIVATION: false,
       AI_VOICE: false,
-      AI_RECEPTIONIST: false,
+      CRM_SYNC: false,
+      CALENDAR: true,
+      ANALYTICS: true,
+      MULTI_LOCATION: false,
+      DEDICATED_ONBOARDING: false,
+      PRIORITY_SUPPORT: false,
     },
     story:
-      "You're a window installer running your first ads. You need leads coming in and a landing page that converts. The Minimum plan gives you done-for-you ad management, 300 batch video ads a month, a conversion-optimized landing page, and an AI appointment agent that responds to every lead instantly, books in-home estimates, and follows up on no-shows.",
-    bestFor:
-      "Solo operators and small window & door crews getting started with digital marketing.",
+      "You're a single-location window company tired of missing calls. Your receptionist can't answer the phone while talking to a walk-in, and after-hours calls go straight to voicemail — where 60% of callers hang up. The Starter plan gives you an AI receptionist that answers every call instantly, qualifies the lead, and books in-home estimates directly on your calendar. No more lost leads, no more phone tag.",
+    bestFor: "Single-location shops",
   },
   {
-    id: "pro",
-    name: "Pro",
-    tagline: "Full AI workforce for serious growth",
-    setupFee: 6997,
-    monthlyPrice: 3497,
-    adBudget: "$1,500/mo included",
-    batchAds: "500/mo",
+    id: "growth",
+    name: "Growth",
+    tagline: "Full AI workforce for serious lead conversion",
+    setupFee: 0,
+    monthlyPrice: 997,
     highlights: [
-      "$1,500/mo ad budget included",
-      "500 batch video ads/mo",
-      "AI chatbot + texting agent",
-      "Lead reactivation + full website",
+      "Everything in Starter",
+      "AI website chatbot",
+      "AI texting agent",
+      "Dead lead reactivation + CRM sync",
     ],
     features: {
-      AD_MANAGEMENT: true,
-      AD_BUDGET: true,
-      BATCH_ADS: true,
-      LANDING_PAGE: true,
-      QUALIFICATION_FORM: true,
-      FULL_WEBSITE: true,
-      CRM_SYNC: true,
-      CALENDAR_INTEGRATION: true,
-      AI_APPOINTMENT_AGENT: true,
+      AI_RECEPTIONIST: true,
+      AI_APPOINTMENT_SETTER: true,
       AI_CHATBOT: true,
       AI_TEXTING: true,
       LEAD_REACTIVATION: true,
       AI_VOICE: false,
-      AI_RECEPTIONIST: false,
+      CRM_SYNC: true,
+      CALENDAR: true,
+      ANALYTICS: true,
+      MULTI_LOCATION: false,
+      DEDICATED_ONBOARDING: false,
+      PRIORITY_SUPPORT: false,
     },
     story:
-      "You're running a window & door company with 2-3 crews. Leads are coming in from multiple sources but half go cold because nobody follows up fast enough. The Pro plan adds an AI chatbot for your website, an AI texting agent for SMS conversations, a multi-step qualification form that routes leads based on their responses, and lead reactivation to re-engage your old database automatically.",
-    bestFor:
-      "Growing service businesses ready to dominate their market with full AI-powered lead management.",
+      "You're running 2-5 crews and leads are coming in from Google, home shows, and referrals. Half go cold because nobody follows up fast enough. The Growth plan adds an AI chatbot for your website, AI texting for SMS conversations, CRM sync to keep everything organized, and dead lead reactivation that automatically re-engages your old database — turning leads you already paid for into booked estimates.",
+    bestFor: "Established companies running 2-5 crews",
   },
   {
-    id: "max",
-    name: "Max",
-    tagline: "Enterprise-grade AI marketing machine",
-    setupFee: 9997,
-    monthlyPrice: 5997,
-    adBudget: "$2,000/mo included",
-    batchAds: "1,000/mo",
+    id: "enterprise",
+    name: "Enterprise",
+    tagline: "Enterprise-grade AI for regional operators",
+    setupFee: 0,
+    monthlyPrice: 2497,
     highlights: [
-      "$2,000/mo ad budget included",
-      "1,000 batch video ads/mo",
-      "AI voice agent + receptionist",
-      "Complete AI automation suite",
+      "Everything in Growth",
+      "AI voice agent — outbound calls",
+      "Multi-location support",
+      "Dedicated onboarding + priority support",
     ],
     features: {
-      AD_MANAGEMENT: true,
-      AD_BUDGET: true,
-      BATCH_ADS: true,
-      LANDING_PAGE: true,
-      QUALIFICATION_FORM: true,
-      FULL_WEBSITE: true,
-      CRM_SYNC: true,
-      CALENDAR_INTEGRATION: true,
-      AI_APPOINTMENT_AGENT: true,
+      AI_RECEPTIONIST: true,
+      AI_APPOINTMENT_SETTER: true,
       AI_CHATBOT: true,
       AI_TEXTING: true,
       LEAD_REACTIVATION: true,
       AI_VOICE: true,
-      AI_RECEPTIONIST: true,
+      CRM_SYNC: true,
+      CALENDAR: true,
+      ANALYTICS: true,
+      MULTI_LOCATION: true,
+      DEDICATED_ONBOARDING: true,
+      PRIORITY_SUPPORT: true,
     },
     story:
-      "You're running a multi-location window & door operation. You need an AI receptionist handling inbound calls, an AI voice agent making outbound follow-ups, lead reactivation across your entire database from home shows and past campaigns, and a massive ad presence across your service areas. The Max plan is your complete AI marketing department.",
-    bestFor:
-      "Multi-location window & door operations wanting maximum lead flow and full AI automation.",
+      "You're a multi-location operation doing $20M+ in revenue. You need an AI voice agent making outbound follow-up calls, location-based routing so leads go to the right branch, centralized reporting across all locations, and a dedicated onboarding team that gets you live fast. The Enterprise plan is your complete AI sales team.",
+    bestFor: "Multi-location window & door operations, $20M+ operators",
   },
 ];
 
 export const pricingFeatures: PricingFeature[] = [
-  // Marketing & Ads
-  { key: "AD_MANAGEMENT", label: "Ad Management", icon: Megaphone, category: "marketing" },
-  { key: "AD_BUDGET", label: "Ad Budget Included", icon: DollarSign, category: "marketing" },
-  { key: "BATCH_ADS", label: "Batch Video Ads", icon: LayoutGrid, category: "marketing" },
-  // Platform
-  { key: "LANDING_PAGE", label: "Landing Page", icon: FileText, category: "platform" },
-  { key: "QUALIFICATION_FORM", label: "Multi-Step Qualification Form", icon: ClipboardList, category: "platform" },
-  { key: "FULL_WEBSITE", label: "Full Website", icon: Globe, category: "platform" },
-  { key: "CRM_SYNC", label: "CRM Sync", icon: Database, category: "platform" },
-  { key: "CALENDAR_INTEGRATION", label: "Calendar Integration", icon: Calendar, category: "platform" },
   // AI Agents
-  { key: "AI_APPOINTMENT_AGENT", label: "AI Appointment Agent", icon: Bell, category: "ai" },
-  { key: "AI_CHATBOT", label: "AI Chatbot", icon: Bot, category: "ai" },
-  { key: "AI_TEXTING", label: "AI Texting Agent", icon: MessageSquare, category: "ai" },
-  { key: "LEAD_REACTIVATION", label: "Lead Reactivation", icon: RotateCcw, category: "ai" },
-  { key: "AI_VOICE", label: "AI Voice Agent", icon: Phone, category: "ai" },
   { key: "AI_RECEPTIONIST", label: "AI Receptionist", icon: PhoneIncoming, category: "ai" },
+  { key: "AI_APPOINTMENT_SETTER", label: "AI Appointment Setter", icon: Bell, category: "ai" },
+  { key: "AI_CHATBOT", label: "AI Website Chatbot", icon: Bot, category: "ai" },
+  { key: "AI_TEXTING", label: "AI Texting Agent", icon: MessageSquare, category: "ai" },
+  { key: "LEAD_REACTIVATION", label: "Dead Lead Reactivation", icon: RotateCcw, category: "ai" },
+  { key: "AI_VOICE", label: "AI Voice Agent — Outbound", icon: Phone, category: "ai" },
+  // Integrations
+  { key: "CRM_SYNC", label: "CRM Sync", icon: Database, category: "integrations" },
+  { key: "CALENDAR", label: "Calendar Integration", icon: Calendar, category: "integrations" },
+  { key: "ANALYTICS", label: "Analytics Dashboard", icon: BarChart3, category: "integrations" },
+  // Support & Onboarding
+  { key: "MULTI_LOCATION", label: "Multi-Location Support", icon: Building2, category: "support" },
+  { key: "DEDICATED_ONBOARDING", label: "Dedicated Onboarding", icon: Users, category: "support" },
+  { key: "PRIORITY_SUPPORT", label: "Priority Support", icon: Shield, category: "support" },
 ];
 
 export const pricingFaqs: PricingFAQ[] = [
   {
-    question: "What does the setup fee cover?",
+    question: "How accurate is the AI receptionist?",
     answer:
-      "The setup fee covers your complete onboarding: custom AI agent training on your business, landing page or website build, ad campaign creation, CRM configuration, calendar integration, and phone number provisioning. Everything is done-for-you — you're live within 7-10 business days.",
+      "Our AI is trained specifically on window and door industry conversations — it understands project types (replacement windows, entry doors, patio doors, storm windows), qualification criteria, and the language homeowners use. It handles 95%+ of calls without human intervention, and seamlessly transfers complex calls to your team when needed.",
   },
   {
-    question: "Can I upgrade my plan later?",
+    question: "What CRMs do you integrate with?",
     answer:
-      "Absolutely. You can upgrade at any time. We'll prorate your setup fee difference and switch you over seamlessly. Most clients who start on Minimum upgrade to Pro within 60 days once they see the ROI.",
+      "We integrate with the most popular home improvement CRMs including MarketSharp, Improveit 360, Leap, JobNimbus, and QuickBooks. We also connect with any CRM that supports webhooks or Zapier. New integrations are added regularly based on customer requests.",
   },
   {
-    question: "What does the included ad budget cover?",
+    question: "How long does setup take?",
     answer:
-      "Your ad budget is spent directly on Google and Meta ads targeting your service area. We manage everything — ad creation, targeting, optimization, and reporting. The budget listed is the minimum included; you can always add more to scale faster.",
+      "Most companies are fully live within 48 hours. We configure your AI agents, connect your calendar, set up CRM sync, and train the system on your specific business details. No lengthy onboarding process — you're answering leads by day two.",
   },
   {
-    question: "Are there contracts or commitments?",
+    question: "Can I upgrade or downgrade my plan?",
     answer:
-      "No long-term contracts. All plans are month-to-month after the initial setup. We earn your business every month. That said, AI marketing compounds over time — the longer you run, the better your results get.",
+      "Absolutely. You can change plans at any time with no penalties. Upgrades take effect immediately, and downgrades apply at the start of your next billing cycle. Most clients who start on Starter upgrade to Growth within 60 days once they see the ROI.",
   },
   {
-    question: "What kind of results can I expect?",
+    question: "What happens when the AI can't handle a call?",
     answer:
-      "Results vary by market and budget, but our clients typically see their first booked appointments within the first week of going live. The AI agent responds to every lead in under 60 seconds, which alone can double your booking rate compared to manual follow-up.",
+      "The AI is designed to handle the vast majority of inbound calls — scheduling estimates, answering FAQs, qualifying leads. For complex situations, it seamlessly transfers the call to your team with full context of the conversation, so the homeowner never has to repeat themselves.",
   },
   {
-    question: "Does this work for window and door companies specifically?",
+    question: "Will this replace my receptionist?",
     answer:
-      "Yes — windoAI is built specifically for window and door manufacturers and installers. Our AI agents understand project types (replacement windows, entry doors, patio doors, storm windows), qualification criteria, and the language homeowners use when requesting quotes.",
+      "It depends on your situation. Many single-location shops use windoAI as their primary receptionist, saving $35K-$50K/year in staffing costs. Larger operations use it to handle overflow, after-hours calls, and follow-ups — so your team can focus on selling and installing, not answering phones.",
   },
   {
-    question: "How long does onboarding take?",
+    question: "How does dead lead reactivation work?",
     answer:
-      "Most clients are fully live within 7-10 business days. This includes AI agent training, website/landing page setup, ad campaign launch, and CRM configuration. We handle everything — you just need to show up for a 30-minute kickoff call.",
+      "We take your existing database of old leads — from past campaigns, home shows, web forms that never converted — and our AI reaches out via text with personalized messages. On average, 15-25% of 'dead' leads re-engage, and many book estimates. It's revenue from leads you already paid to acquire.",
   },
   {
-    question: "What are batch video ads?",
+    question: "Are there any contracts?",
     answer:
-      "Batch video ads are professionally produced short-form video ads we create for your business. Each batch includes multiple ad variations optimized for different platforms and audiences. More ads means more creative variety, which improves ad performance over time.",
+      "No contracts, ever. All plans are month-to-month. We earn your business every month with results, not lock-in agreements. That said, AI-powered lead management compounds over time — the longer you run, the smarter your system gets.",
   },
 ];

@@ -42,7 +42,7 @@ export function PricingComparisonSection() {
                       className="p-4 font-heading font-semibold text-foreground text-center"
                     >
                       {tier.name}
-                      {tier.id === "pro" && (
+                      {tier.id === "growth" && (
                         <Badge className="ml-2 text-[10px] py-0">
                           Popular
                         </Badge>
@@ -75,33 +75,7 @@ export function PricingComparisonSection() {
                       key={tier.id}
                       className="p-4 text-center text-sm text-foreground"
                     >
-                      ${tier.setupFee.toLocaleString()}
-                    </td>
-                  ))}
-                </tr>
-                <tr className="bg-muted/30">
-                  <td className="p-4 text-foreground font-medium">
-                    Ad Budget Included
-                  </td>
-                  {pricingTiers.map((tier) => (
-                    <td
-                      key={tier.id}
-                      className="p-4 text-center text-sm text-foreground"
-                    >
-                      {tier.adBudget.replace("/mo included", "/mo")}
-                    </td>
-                  ))}
-                </tr>
-                <tr>
-                  <td className="p-4 text-foreground font-medium">
-                    Batch Video Ads
-                  </td>
-                  {pricingTiers.map((tier) => (
-                    <td
-                      key={tier.id}
-                      className="p-4 text-center text-sm text-foreground"
-                    >
-                      {tier.batchAds}
+                      {tier.setupFee === 0 ? "Free" : `$${tier.setupFee.toLocaleString()}`}
                     </td>
                   ))}
                 </tr>
@@ -160,7 +134,7 @@ export function PricingComparisonSection() {
             <AnimateOnScroll key={tier.id} delay={index * 0.1}>
               <Card
                 className={
-                  tier.id === "pro"
+                  tier.id === "growth"
                     ? "border-primary border-2"
                     : "border-border"
                 }
@@ -170,19 +144,11 @@ export function PricingComparisonSection() {
                     <h3 className="text-lg font-heading font-bold text-foreground">
                       {tier.name}
                     </h3>
-                    {tier.id === "pro" && <Badge className="text-[10px] py-0">Popular</Badge>}
+                    {tier.id === "growth" && <Badge className="text-[10px] py-0">Popular</Badge>}
                   </div>
                   <p className="text-sm text-muted-foreground mb-4">
-                    ${tier.monthlyPrice.toLocaleString()}/mo &middot; ${tier.setupFee.toLocaleString()} setup
+                    ${tier.monthlyPrice.toLocaleString()}/mo &middot; {tier.setupFee === 0 ? "Free setup" : `$${tier.setupFee.toLocaleString()} setup`}
                   </p>
-                  <div className="space-y-2 mb-3">
-                    <p className="text-sm text-foreground">
-                      {tier.adBudget}
-                    </p>
-                    <p className="text-sm text-foreground">
-                      {tier.batchAds} batch video ads
-                    </p>
-                  </div>
                   <div className="border-t border-border pt-3 space-y-2">
                     {pricingFeatures
                       .filter((f) => tier.features[f.key])

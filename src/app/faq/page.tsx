@@ -252,61 +252,61 @@ const salesAutomationFaqs: FAQItem[] = [
   },
 ];
 
-// Marketing Automation FAQs
+// AI Receptionist & Automation FAQs
 const marketingAutomationFaqs: FAQItem[] = [
   {
-    question: "How long does it take to set up marketing automation?",
+    question: "How long does it take to set up the AI receptionist?",
     answer:
-      "Most businesses are fully operational within 2-3 weeks. This includes ad account integration, landing page setup, lead routing configuration, and initial optimization. We handle the technical work—you just review and approve.",
+      "Most companies are fully live within 48 hours. We configure your AI agents, connect your calendar, set up CRM sync, and train the system on your specific business details. No lengthy onboarding process.",
   },
   {
-    question: "Will this work with my existing advertising platforms?",
+    question: "Will this work with my existing CRM?",
     answer:
-      "Yes. We integrate with all major advertising platforms including Google Ads, Meta (Facebook/Instagram), TikTok, LinkedIn, and more. If you're running ads, we can optimize them.",
+      "Yes. We integrate with the most popular home improvement CRMs including MarketSharp, Improveit 360, Leap, JobNimbus, and QuickBooks. We also connect with any CRM that supports webhooks or Zapier.",
   },
   {
-    question: "How does the A/B testing work?",
+    question: "How accurate is the AI at handling calls?",
     answer:
-      "Our AI automatically creates and tests multiple variations of your ads and landing pages. It identifies statistically significant winners and shifts traffic to top performers—all without manual intervention. You'll see what's being tested and what's winning in your dashboard.",
+      "Our AI is trained specifically on window and door industry conversations — it understands project types, qualification criteria, and the language homeowners use. It handles 95%+ of calls without human intervention and seamlessly transfers complex calls to your team.",
   },
   {
-    question: "What happens if the AI makes changes I don't like?",
+    question: "What happens if the AI can't handle a call?",
     answer:
-      "You maintain full control. Set guardrails for bids, budgets, and brand guidelines. Review all changes in your dashboard. Pause automation anytime. The AI works within your parameters—you're always in the driver's seat.",
+      "For complex situations, the AI seamlessly transfers the call to your team with full context of the conversation — project details, qualification info, and conversation history. The homeowner never has to repeat themselves.",
   },
   {
-    question: "How do you track ROI across different channels?",
+    question: "How does dead lead reactivation work?",
     answer:
-      "We implement full-funnel tracking from ad click through to closed deal. This includes cross-device attribution, call tracking, form submissions, and CRM integration. You'll know exactly which campaigns drive revenue, not just clicks.",
+      "We take your existing database of old leads — from past campaigns, home shows, web forms — and our AI reaches out via text with personalized messages. On average, 15-25% of 'dead' leads re-engage and many book estimates. It's revenue from leads you already paid to acquire.",
   },
   {
     question: "What kind of results can I expect?",
     answer:
-      "Most clients see 30-50% improvement in cost per lead within the first 90 days, with conversion rates improving 2-3x over time. The exact results depend on your starting point, but continuous optimization compounds gains over time.",
+      "Results vary by market, but our clients typically see their first booked appointments within the first week of going live. The AI agent responds to every lead in under 60 seconds, which alone can double your booking rate compared to manual follow-up.",
   },
 ];
 
 // Pricing & Implementation FAQs
 const pricingImplementationFaqs: FAQItem[] = [
   {
-    question: "What does the setup fee cover?",
+    question: "Is there a setup fee?",
     answer:
-      "The setup fee covers your complete onboarding: custom AI agent training on your business, landing page or website build, ad campaign creation, CRM configuration, calendar integration, and phone number provisioning. Everything is done-for-you — you're live within 7-10 business days.",
+      "No — all plans have $0 setup fees. We handle your complete onboarding: custom AI agent training on your business, CRM configuration, calendar integration, and phone number provisioning. Most companies are live within 48 hours.",
   },
   {
     question: "Can I upgrade my plan later?",
     answer:
-      "Absolutely. You can upgrade at any time. We'll prorate your setup fee difference and switch you over seamlessly. Most clients who start on Minimum upgrade to Pro within 60 days once they see the ROI.",
+      "Absolutely. You can change plans at any time with no penalties. Upgrades take effect immediately, and downgrades apply at the start of your next billing cycle. Most clients who start on Starter upgrade to Growth within 60 days once they see the ROI.",
   },
   {
-    question: "What does the included ad budget cover?",
+    question: "Will this replace my receptionist?",
     answer:
-      "Your ad budget is spent directly on Google and Meta ads targeting your service area. We manage everything — ad creation, targeting, optimization, and reporting. The budget listed is the minimum included; you can always add more to scale faster.",
+      "It depends on your situation. Many single-location shops use windoAI as their primary receptionist, saving $35K-$50K/year in staffing costs. Larger operations use it to handle overflow, after-hours calls, and follow-ups — so your team can focus on selling and installing.",
   },
   {
     question: "Are there contracts or commitments?",
     answer:
-      "No long-term contracts. All plans are month-to-month after the initial setup. We earn your business every month. That said, AI marketing compounds over time — the longer you run, the better your results get.",
+      "No contracts, ever. All plans are month-to-month. We earn your business every month with results, not lock-in agreements. That said, AI-powered lead management compounds over time — the longer you run, the smarter your system gets.",
   },
   {
     question: "What kind of results can I expect?",
@@ -321,12 +321,7 @@ const pricingImplementationFaqs: FAQItem[] = [
   {
     question: "How long does onboarding take?",
     answer:
-      "Most clients are fully live within 7-10 business days. This includes AI agent training, website/landing page setup, ad campaign launch, and CRM configuration. We handle everything — you just need to show up for a 30-minute kickoff call.",
-  },
-  {
-    question: "What are batch video ads?",
-    answer:
-      "Batch video ads are professionally produced short-form video ads we create for your business. Each batch includes multiple ad variations optimized for different platforms and audiences. More ads means more creative variety, which improves ad performance over time.",
+      "Most companies are fully live within 48 hours. We configure your AI agents, connect your calendar, set up CRM sync, and train the system on your specific business details. No lengthy onboarding — you're answering leads by day two.",
   },
 ];
 
@@ -399,12 +394,12 @@ const faqSections: FAQSection[] = [
   },
   {
     id: "marketing-automation",
-    title: "Marketing Automation",
+    title: "AI Receptionist & Automation",
     icon: Megaphone,
-    description: "Optimize ads, landing pages, and lead routing with AI",
+    description: "24/7 AI receptionist, lead qualification, and appointment booking",
     link: {
-      href: "/solutions/marketing-automation",
-      text: "Learn about Marketing Automation",
+      href: "/solutions/after-hours",
+      text: "Learn about After-Hours Coverage",
     },
     faqs: marketingAutomationFaqs,
   },
@@ -538,7 +533,7 @@ export default function FAQPage() {
                 {[
                   { href: "/solutions/ai-lead-generation", title: "AI Lead Generation", description: "Capture leads 24/7 with AI chatbots and voice agents" },
                   { href: "/solutions/sales-automation", title: "Sales Automation", description: "Put your sales pipeline on autopilot" },
-                  { href: "/solutions/marketing-automation", title: "Marketing Automation", description: "Optimize ads and landing pages with AI" },
+                  { href: "/solutions/after-hours", title: "After-Hours Coverage", description: "Never miss another evening or weekend lead" },
                   { href: "/solutions/lead-reactivation", title: "Lead Reactivation", description: "Revive dormant leads in your database" },
                   { href: "/solutions/business-automation", title: "Business Automation", description: "Eliminate manual busywork with AI workflows" },
                   { href: "/pricing", title: "Pricing Plans", description: "View plans for every business size" },

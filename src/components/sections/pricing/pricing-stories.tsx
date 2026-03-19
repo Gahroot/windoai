@@ -28,7 +28,7 @@ export function PricingStoriesSection() {
             >
               <div className="flex-1">
                 <Badge
-                  variant={tier.id === "pro" ? "default" : "secondary"}
+                  variant={tier.id === "growth" ? "default" : "secondary"}
                   className="mb-4"
                 >
                   {tier.name} Plan
@@ -44,7 +44,7 @@ export function PricingStoriesSection() {
                     ${tier.monthlyPrice.toLocaleString()}/mo
                   </p>
                   <p className="text-sm text-muted-foreground">
-                    {tier.adBudget} &middot; {tier.batchAds} batch ads
+                    {tier.tagline}
                   </p>
                 </div>
               </div>

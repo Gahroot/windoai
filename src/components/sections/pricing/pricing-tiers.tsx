@@ -14,7 +14,7 @@ export function PricingTiersSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8">
           {pricingTiers.map((tier, index) => {
-            const isPro = tier.id === "pro";
+            const isPro = tier.id === "growth";
             return (
               <AnimateOnScroll key={tier.id} delay={index * 0.1}>
                 <Card

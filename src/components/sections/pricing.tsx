@@ -23,7 +23,7 @@ export function PricingSection() {
         <AnimateOnScroll delay={0.2}>
           <div className="grid md:grid-cols-3 gap-6">
             {pricingTiers.map((tier) => {
-              const isPro = tier.id === "pro";
+              const isPro = tier.id === "growth";
               return (
                 <Card
                   key={tier.id}
